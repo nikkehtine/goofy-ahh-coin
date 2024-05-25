@@ -21,8 +21,8 @@ class Block
       end
     end # loop
   end # compute_hash_pow
-end # Block
 
-def display_block(block)
-  return "data: #{block.data}\nhash: #{block.hash}\nnonce: #{block.nonce}"
-end
+  def display
+    return "data: #{@data}\nhash: #{@hash}\nnonce: #{@nonce}"
+  end
+end # Block
